@@ -94,15 +94,132 @@ textarea {
 /* ==========================================================================
    Author's custom styles
    ========================================================================== */
+*{
+  margin: 0;
+  padding: 0;
+}
+img{
+  width: 100%;
+}
+h1{
+font-family: 'Open Sans', sans-serif;
+text-align: center;
+}
+.presentation p, .presentation2 p {
 
+margin-left: 5%;
+}
+cite p{
+  text-align: center;
+}
+footer{
+  background-color: #656565;
+  justify-content: center;
+  align-self: center;
+  display:flex;
+  flex-direction: column;
+}
+.footerimage{
+  display: flex;
+  flex-direction: row;
+  /*justify-content: space-around;*/
+  margin: 5px auto;
+}
+footer a{
+  margin:2px;
+}
 
+footer p{
+  color: #fff;
+  text-align: center;
+  margin-top: 8px;
+}
+footer img{
+  width: 30px;
+  height: 30px;
+}
+/*start Formulaire*/
+p {
+  margin-top: 0px;
+}
 
+fieldset {
+  margin-bottom: 15px;
+  padding: 10px;
+  margin: 1px;
+  padding: 1px;
+}
 
+legend {
+  padding: 0px 3px;
+  font-weight: bold;
+  font-variant: small-caps;
+}
 
+label {
+  width: 110px;
+  display: inline-block;
+  vertical-align: top;
+  margin: 6px;
+}
 
+em {
+  font-weight: bold;
+  font-style: normal;
+  color: #f00;
+}
 
+input:focus {
+  background: #eaeaea;
+}
 
+input, textarea {
+  width: 249px;
+}
 
+textarea {
+  height: 100px;
+}
+
+select {
+  width: 254px;
+}
+
+input[type=checkbox] {
+  width: 10px;
+}
+
+input[type=submit] {
+  width: 150px;
+  padding: 10px;
+}
+
+/*End formulaire*/
+/*start tablette*/
+@media (min-width: 768px) {
+  cite p{
+    margin-bottom: 5px;
+  }
+}
+/*end tablette*/
+
+/*start desktop*/
+@media (min-width: 1028px) {
+  .presentation, .presentation2
+  {
+    float: left;
+    margin: 2%;
+  }
+.presentation2 figure {
+    float: right;
+    width: 30%;
+  }
+.presentation figure{
+    width: 30%;
+    float: left;
+  }
+}
+/*end desktop*/
 
 
 
